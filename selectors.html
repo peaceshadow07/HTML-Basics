@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1. UNIVERSAL SELECTOR - Universal selector to apply effect to entire page 
+            It is used using '*' character*/
+        *{
+            background-color: bisque;
+        }
+
+        /*2.ELEMENT SELECTOR -  element p used for element selector */
+        p{
+            color: rgb(33, 0, 65);
+        }
+
+        /*3. CLASS SELECTOR -  creating style for classes largetext and greentext */
+        .largetext{
+            font-size: 20px;
+        }
+        .greentext{
+            color: green;
+        }
+        /* Selecting element with largetext and greentext classes as combination only */
+        .largetext.greentext{
+            color: rgb(243, 1, 203);
+        }
+        /*4. ID SELECTOR -  Writing style for ID selector gillText to cahnge font style to Gill Sans*/
+        #gillText{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* 5. GROUP SELECTOR - Grouping of element selectors h5 and h4 */
+        h4,h5{
+            color:darkorange;
+        }    
+        </style>
+
+</head>
+<body>
+        <!-- Element selector using paragraph tag element -->
+    <h3><u>This is an example of CSS selector used in Html.<br>For better understanding of selectors using this example view code and output simultaneously.</u></h3>
+    <div>
+        <h3>Element Selector Example</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam, quaerat fuga, id eum doloribus aliquam architecto enim hic sunt fugit magni, aliquid corporis. Dolores blanditiis maxime obcaecati similique nobis.</p>
+    </div>
+    <!-- Class selector using classes largetext and greentext -->
+    <div>
+        <h3>Class Selector Example</h3>
+        <!-- multiple classes applied  -->
+        <p class="largetext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat voluptatem dicta deserunt veniam et molestiae ratione ad nesciunt repellat, error tempore voluptates sequi quasi rem asperiores iusto officiis natus.</p>
+        <!-- single class applied -->
+        <p class="greentext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque iure iste ipsa nihil aut fuga ut voluptates sunt amet rerum! Quis vero ad voluptates. Odio, quod eius! Placeat, sint eum.</p>
+        <!-- style content using combination of classes -->
+        <p class="largetext greentext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat voluptatem dicta deserunt veniam et molestiae ratione ad nesciunt repellat, error tempore voluptates sequi quasi rem asperiores iusto officiis natus.</p>
+
+    </div>
+    <!-- ID selector using id "gillText" to change font style of text -->
+    <div>
+        <h3>ID selector Example</h3>
+        <p id="gillText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repellat quasi delectus voluptatibus, atque voluptates. Dignissimos tenetur culpa numquam officiis praesentium, incidunt exercitationem dolor? Nobis earum minus at accusantium beatae!</p>
+    </div>
+
+    <!-- GROUP SELECTOR using h4 and h5 tag-->
+    <div>
+        <h3>GROUP selector Example</h3>
+        <h4>Hi I am h4 tag!!</h4>
+        <h5>Hey there, I am h5 tag :)</h5>
+    </div>
+
+    
+    
+</body>
+</html>
