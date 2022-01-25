@@ -22,7 +22,7 @@
             font-size: 20px;
         }
         .greentext{
-            color: green;
+            color: rgb(6, 170, 6);
         }
         /* Selecting element with largetext and greentext classes as combination only */
         .largetext.greentext{
@@ -37,10 +37,24 @@
         h4,h5{
             color:darkorange;
         }    
+
+        
+        /* <!-- COMBINATOR SELECTOR --> */
+        /*1.DESCEDANT SELECTOR - Descedant selector where tags are seperated by space */
+        div p span{
+            color: blue;
+        }
+
+        /* 2. CHILDREN SELECTOR - Children selector where tags are seperated by > to apply styling to direct descedant*/
+        div>p>span{
+            color: darkgoldenrod;
+        }
         </style>
+
 
 </head>
 <body>
+    <h2 align="center">SIMPLE SELECTORS</h2>
         <!-- Element selector using paragraph tag element -->
     <h3><u>This is an example of CSS selector used in Html.<br>For better understanding of selectors using this example view code and output simultaneously.</u></h3>
     <div>
@@ -71,7 +85,34 @@
         <h5>Hey there, I am h5 tag :)</h5>
     </div>
 
+    <h2 align="center">COMBINATOR SELECTORS</h2>
+
+    <!-- Children selector 
+    Only direct/first child will be styled to golden rod color-->
+    <h3>Children selector Example</h3>
+    <div>
+        <p><span>
+            This is Children span.
+        </span>
+    </p>
+    </div>
+
+    <!-- Descedant selector 
+        If there is any descedant with p and span it'll be blue color -->
+    <h3>Descedant selector Example</h3>
+    <div>
+        <span>
+        <p>
+            <span>
+                <p>
+                    <span>This is descedant paragraph.</span>
+                </p>
+        </span>
+    </p>
+</span>
+    </div>
     
+
     
 </body>
 </html>
